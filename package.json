@@ -1,0 +1,38 @@
+{
+  "name": "regexray",
+  "version": "1.1.4",
+  "description": "A RegEx object scanner, scans JS object string fields for RegEx patterns and gives information about matches. Think X-Ray checkpoint for JS objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniormrzz/regexray.git"
+  },
+  "keywords": [
+    "object",
+    "JSON",
+    "RegEx",
+    "scan",
+    "verify",
+    "validate",
+    "string",
+    "pattern",
+    "express",
+    "request"
+  ],
+  "author": "Antonio Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoniormrzz/regexray/issues"
+  },
+  "homepage": "https://github.com/antoniormrzz/regexray#readme",
+  "dependencies": {
+    "object-rover": "^1.0.0"
+  },
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
