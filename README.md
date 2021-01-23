@@ -52,7 +52,7 @@ const testObj = {
 		}
 	  };
 	  
-await regexray(testObj,[/'el','ken'/])
+await regexray(testObj,[/el/,/ken/])
 
 result: 
 
