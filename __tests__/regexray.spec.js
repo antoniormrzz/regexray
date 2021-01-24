@@ -39,9 +39,11 @@ describe('Scan', () => {
   test('Should return empty array if fed wrong type', async () => {
     const data1 = await regexray([1, 2, 3], [/hell/, /bill/, /el/, /johncena/]);
     const data2 = await regexray(null, [/hell/, /bill/, /el/, /johncena/]);
-    const data3 = await regexray('hello johncena and billy', [/hell/, /bill/, /el/, /johncena/]);
+    const data3 = await regexray(undefined, [/hell/, /bill/, /el/, /johncena/]);
+    const data4 = await regexray('hello johncena and billy', [/hell/, /bill/, /el/, /johncena/]);
     expect(data1.map(d => d.path)).toEqual([]);
     expect(data2.map(d => d.path)).toEqual([]);
     expect(data3.map(d => d.path)).toEqual([]);
+    expect(data4.map(d => d.path)).toEqual([]);
   });
 });
